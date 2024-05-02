@@ -1,0 +1,121 @@
+body, h1, table {
+    margin: 0;
+    padding: 0;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+    background-color: #212429;
+    color: rgba(255, 255, 255, 0.7);
+    padding: 20px;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+  }
+  
+  h1 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  table {
+    width: 100%;
+    border-collapse: collapse;
+    border: 1px solid rgba(255, 255, 255, 0.7);
+    background-color: #121212;
+    color: rgba(255, 255, 255, 0.7);
+    font-size: 16px; /* Increase font size */
+  }
+  
+  th, td {
+    padding: 12px; /* Increase padding */
+    border: 1px solid rgba(255, 255, 255, 0.1);
+  }
+  
+  th {
+    background-color: #121212;
+    font-weight: bold;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 6px 12px;
+    margin-top: 15px;
+    margin-bottom: 0;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 1.42857143;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    cursor: pointer;
+    border: 2px solid rgba(255,255,255,0.7);
+    border-radius: 4px;
+    background-color: inherit;
+    color: rgba(255,255,255,0.7);
+    text-decoration: none;
+  }
+  
+  .btn:hover {
+    background-color: rgba(255,255,255,0.7);
+    color: black;
+    text-decoration: none;
+  }
+  
+  /* Add color for each city */
+#price-table th:nth-child(2), #price-table td:nth-child(2) {
+    color: white; /* Fort Sterling - white */
+  }
+  
+  #price-table th:nth-child(3), #price-table td:nth-child(3) {
+    color: #5DB88A; /* Lymhurst - green */
+  }
+  
+  #price-table th:nth-child(4), #price-table td:nth-child(4) {
+    color: #fcd901; /* BridgeWatch - yellow */
+  }
+  
+  #price-table th:nth-child(5), #price-table td:nth-child(5) {
+    color: #0892D0; /* Martlock - light blue */
+  }
+  
+  #price-table th:nth-child(6), #price-table td:nth-child(6) {
+    color: #871f78; /* Thetford - dark purple */
+  }
+  
+  #price-table th:nth-child(7), #price-table td:nth-child(7) {
+    color: red; /* Caerleon - black */
+  }
+  
+
+  /* Add up and down arrows to max and min price cells */
+.max-price::after {
+    content: ' ↑';
+    color: green;
+  }
+  
+  .min-price::after {
+    content: ' ↓';
+    color: red;
+  }
+
+  /* Style for the refresh icon */
+.refresh-btn i {
+    font-size: 18px; /* Adjust the size of the icon */
+  }
+  
+  /* Center the icon vertically and horizontally within the button */
+  .refresh-btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 0;
+    background: none;
+    color: rgba(255,255,255,0.7);
+    border: none;
+    cursor: pointer;
+  }
+  
